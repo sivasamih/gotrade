@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GT </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assets/materialize/css/materialize.css" media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        html{
+            font-family: 'Times New Roman';
+        }
+
+        td,
+        th {
+            padding: 1px 1px !important;
+
+        }
+    </style>
+
+   
+</head>
+
+<body class="">
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="/login.html">Back</a></li>
+        <li><a href="javascript:void(0);">Logout</a></li>
+        
+      </ul>
+    <nav class="black">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Go Trade</a>
+          <ul class="right">           
+            <li><a class="dropdown-trigger" href="javascript:void(0);" data-target="dropdown1"><i class="material-icons">more_vert</i></a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="/assets/media/b1.png">
+                    </div>
+                    <div class="card-content red lighten-2">
+                        <span class="card-title activator white-text">
+                            <b>  Name</b>
+                            <i class="material-icons right  white-text">visibility</i>
+                        </span>
+                    </div>
+                    <div class="card-reveal grey lighten-5">
+                        <span class="card-title grey-text text-darken-4">
+                            <i class="material-icons right">close</i>
+                        </span>
+                       
+                        <div class="row">
+                            <div class="col s12">
+                                <table style="border-style: none !important;border-collapse:initial !important;">
+                                    <tr>
+                                        <td><b>Date:</b></td>
+                                        <td>&nbsp;</td>
+                                        <td>02-08-2021</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Name:</b></td>
+                                        <td>&nbsp;</td>
+                                        <td><b>TATACOFFEE</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Buy Price:</b></td>
+                                        <td>&nbsp;</td>
+                                        <td>100-102</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Target Price:</b></td>
+                                        <td>&nbsp;</td>
+                                        <td class="green-text"><b>110/115/120</b> </td>
+                                    </tr>
+                                </table>
+                                <p class="brown-text">
+                                    Small strategy and details comes here
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col s12">
+                                  <a href="/assets/media/stocksGraph/ionexchange.JPG" download>
+                                   <img  class="responsive-img" src="/assets/media/stocksGraph/ionexchange.JPG" />
+                                  </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="/assets/jquery.js"></script>
+    <script type="text/javascript" src="/assets/materialize/js/materialize.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".dropdown-trigger").dropdown();
+        });
+    </script>
+</body>
+
+</html>
