@@ -2,13 +2,17 @@
 <html>
 
 <head>
-    <title>GT </title>
-
+    <title>Go Trade </title>
+    <link rel="shortcut icon" href="/assets/media/gotradelogo.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="assets/materialize/css/materialize.css" media="screen,projection" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
+html{
+            font-family: 'Times New Roman';
+        }
+
         body {
             display: flex;
             min-height: 100vh;
@@ -91,28 +95,20 @@
 
     </div>
 
-    <ul id="dropdown1" class="dropdown-content">
-        <li><a href="/gtdash.html">Dashboard</a></li>
-        <li><a href="javascript:void(0);">Logout</a></li>
-
-    </ul>
+     
     <nav class="black">
         <div class="nav-wrapper">
             <a href="#!" class="brand-logo">Go Trade</a>
-            <ul class="right">
-                <li><a class="dropdown-trigger" href="javascript:void(0);" data-target="dropdown1"><i
-                            class="material-icons">more_vert</i></a></li>
-            </ul>
+          
         </div>
     </nav>
-
-
-
-
     <div class="section"></div>
     <main>
-        <center>
-            <div class="section"></div>
+        <center>      
+            <span id="user-count" style="font-size: 15px;font-weight: bold;" class="new badge red lighten-2 black-text" data-badge-caption="Users">175</span> 
+            
+            <div class="section"></div>            
+           
             <h5 class="black-text">Please, login into your account</h5>
             <div class="section"></div>
 
@@ -143,7 +139,7 @@
                         <br />
                         <center>
                             <div class='row'>
-                                <a name='btn_login' class='col s12 btn btn-large waves-effect black'>Login</a>
+                                <a id="btn_login" name='btn_login' class='col s12 btn btn-large waves-effect black'>Login</a>
                             </div>
                         </center>
                     </div>
@@ -159,12 +155,7 @@
 
     <script type="text/javascript" src="/assets/jquery.js"></script>
     <script type="text/javascript" src="/assets/materialize/js/materialize.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".dropdown-trigger").dropdown();
-            $('.modal').modal();
-        });
-    </script>
+    <script type="text/javascript" src="/assets/gotradeLogin.js"></script>
 </body>
 
 </html>
