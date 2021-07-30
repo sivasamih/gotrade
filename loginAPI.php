@@ -20,8 +20,7 @@ if (isset($_GET['email']) && $_GET['password']!="") {
  $query = "SELECT count(*) as count FROM `users` WHERE email=$email and password=$password";
  $result = mysqli_query($query);
  $row = mysqli_fetch_array($result,MYSQLI_ASSOC);  
- $response["result1"] = $result; 
-        $response["row"] = $row;
+ 
  if($result){
     while($row = mysqli_fetch_array($result)){
         $count = $row["count"];
